@@ -3,6 +3,7 @@
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
 // Plus imports for other components in your app.
+@import "~@angular/material/theming";
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -12,15 +13,23 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$planetarium-primary: mat.define-palette(mat.$blue-grey-palette);
-$planetarium-accent: mat.define-palette(mat.$green-palette, A200, A100, A400);
+$planetarium-primary: mat.define-palette(mat.$blue-grey-palette, 900, 800);
+$planetarium-accent: mat.define-palette(mat.$indigo-palette, A700, A400, A200);
 
 // The warn palette is optional (defaults to red).
 $planetarium-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$planetarium-theme: mat.define-dark-theme((
+$planetarium-light-theme: mat.define-light-theme((
+  color: (
+    primary: $planetarium-primary,
+    accent: $planetarium-accent,
+    warn: $planetarium-warn,
+  )
+));
+
+$planetarium-dark-theme: mat.define-dark-theme((
   color: (
     primary: $planetarium-primary,
     accent: $planetarium-accent,
@@ -31,5 +40,5 @@ $planetarium-theme: mat.define-dark-theme((
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-component-themes($planetarium-theme);
+@include mat.all-component-themes($planetarium-dark-theme);
 
