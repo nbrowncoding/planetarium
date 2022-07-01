@@ -1,0 +1,9 @@
+footer {
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+span > a {
+    color: #536DFE;
+}

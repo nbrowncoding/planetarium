@@ -1,0 +1,36 @@
+<main>
+  <section id="header">
+    <h1>{{ pageTitle }}</h1>
+    <h4 class="disclaimer"><sup>*</sup> {{ titleDisclaimer }}</h4>
+  </section>
+  <section id="planet-list">
+    <mat-table [dataSource]="planetInfo" class="mat-elevation-z8 planet-table">
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+        <mat-cell *matCellDef="let planet"> {{planet.name}} </mat-cell>
+      </ng-container>
+
+      <!-- Type Column -->
+      <ng-container matColumnDef="type">
+        <mat-header-cell *matHeaderCellDef> Type </mat-header-cell>
+        <mat-cell *matCellDef="let planet"> {{planet.type}} </mat-cell>
+      </ng-container>
+
+      <!-- Category Column -->
+      <ng-container matColumnDef="category">
+        <mat-header-cell *matHeaderCellDef> Category </mat-header-cell>
+        <mat-cell *matCellDef="let planet"> {{planet.category}} </mat-cell>
+      </ng-container>
+
+      <!-- Distance Column -->
+      <ng-container matColumnDef="distance">
+        <mat-header-cell *matHeaderCellDef> Distance from Sun </mat-header-cell>
+        <mat-cell *matCellDef="let planet"> {{planet.distance }} </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </section>
+</main>

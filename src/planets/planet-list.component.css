@@ -1,0 +1,21 @@
+main {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+h1 {
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+h4 {
+    padding: 2px;
+}
+
+.disclaimer {
+    font-style: italic;
+}
+
+mat-table {
+    width: 100%;
+}

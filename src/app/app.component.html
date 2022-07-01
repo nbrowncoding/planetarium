@@ -5,13 +5,17 @@
   </head>
   <body>
     <mat-toolbar color="primary">
-      <button mat-icon-button color="accent">
+      <button mat-icon-button>
        <mat-icon>menu</mat-icon>
      </button>
      <span>{{ title }}</span>
    </mat-toolbar>
    <div class="mat-app-background" fxLayout="row" fxLayout.xs="column" fxLayoutGap="16px" fxLayoutAlign="center">
-    <h1>This is a planetarium!</h1>
+     <planet-list></planet-list>
    </div>
+   <footer class="mat-app-background">
+     <span>&COPY; 2022 Nicholas Brown. </span>
+     <span>Data from <a href="https://solarsystem.nasa.gov" target="_blank">NASA Planetary Science Division</a>.</span>
+   </footer>
   </body>
 </html>
