@@ -14,8 +14,11 @@ export class PlanetListComponent {
 
     // Page Title and disclaimers
     pageTitle = "List of Planets in our Solar System (ordered by max distance from the sun)";
-    titleDisclaimer = "includes notable dwarf planets";
+    titleDisclaimer = "includes notable minor planets";
 
+    // Image settings for planet table
+    imageWidth = 150;
+    imageMargin = 5;
 
     // Planet data
     planetInfo: Planet[] = [
@@ -23,79 +26,92 @@ export class PlanetListComponent {
             name: 'Mercury',
             type: 'Terrestrial',
             category: 'Planet',
-            distance: '0.4 AU'
+            distance: '0.4 AU',
+            imageUrl: 'assets/images/mercury.jpeg'
         },
         {
             name: 'Venus',
             type: 'Terrestrial',
             category: 'Planet',
-            distance: '0.7 AU'
+            distance: '0.7 AU',
+            imageUrl: 'assets/images/venus.jpeg'
         },
         {
             name: 'Earth',
             type: 'Terrestrial',
             category: 'Planet',
-            distance: '1 AU'
+            distance: '1 AU',
+            imageUrl: 'assets/images/earth.jpeg'
         },
         {
             name: 'Mars',
             type: 'Terrestrial',
             category: 'Planet',
-            distance: '1.5 AU'
+            distance: '1.5 AU',
+            imageUrl: 'assets/images/mars.jpeg'
         },
         {
             name: 'Ceres',
-            type: 'Astroid',
+            type: 'Planetoid',
             category: 'Dwarf Planet',
-            distance: '2.8 AU'
+            distance: '2.8 AU',
+            imageUrl: 'assets/images/ceres.jpeg'
         },
         {
             name: 'Jupiter',
             type: 'Gas Giant',
             category: 'Planet',
-            distance: '5.2 AU'
+            distance: '5.2 AU',
+            imageUrl: 'assets/images/jupiter.jpeg'
         },
         {
             name: 'Saturn',
             type: 'Gas Giant',
             category: 'Planet',
-            distance: '9.5 AU'
+            distance: '9.5 AU',
+            imageUrl: 'assets/images/saturn.jpeg'
         },
         {
             name: 'Uranus',
             type: 'Ice Giant',
             category: 'Planet',
-            distance: '19.8 AU'
+            distance: '19.8 AU',
+            imageUrl: 'assets/images/uranus.jpeg'
         },
         {
             name: 'Neptune',
             type: 'Ice Giant',
             category: 'Planet',
-            distance: '30.1 AU'
+            distance: '30.1 AU',
+            imageUrl: 'assets/images/neptune.jpeg'
         },
         {
             name: 'Pluto',
             type: 'KBO (Kuiper belt object)',
             category: 'Dwarf Planet',
-            distance: '39 AU'
+            distance: '39 AU',
+            imageUrl: 'assets/images/pluto.jpeg'
         },
         {
             name: 'Haumea',
             type: 'KBO (Kuiper belt object)',
             category: 'Dwarf Planet',
-            distance: '35 to 52 AU'
+            distance: '35 to 52 AU',
+            imageUrl: 'assets/images/haumea.jpeg'
         },
         {
             name: 'Makemake',
             type: 'KBO (Kuiper belt object)',
             category: 'Dwarf Planet',
-            distance: '39 to 53 AU'
+            distance: '39 to 53 AU',
+            imageUrl: 'assets/images/makemake.jpeg'
         },
         {
             name: 'Eris',
             type: 'KBO (Kuiper belt object)',
             category: 'Dwarf Planet',
-            distance: '38 to 68 AU'
+            distance: '38 to 68 AU',
+            imageUrl: 'assets/images/eris.jpeg'
         }
     ];
 
@@ -103,5 +119,5 @@ export class PlanetListComponent {
     dataSource = this.planetInfo;
 
     // Planet information that is displayed on the table
-    displayedColumns: string[] = ['name', 'type', 'category', 'distance'];
+    displayedColumns: string[] = ['imageUrl','name', 'type', 'category', 'distance'];
 }

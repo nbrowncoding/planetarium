@@ -18,4 +18,18 @@ h4 {
 
 mat-table {
     width: 100%;
+    font-size: 50px;
+}
+
+mat-header-cell {
+    font-size: 20px;
+}
+
+mat-cell {
+    font-size: 20px;
+}
+
+img {
+    border: 1px solid #304FFE;
+    border-radius:25px;
 }
