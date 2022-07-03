@@ -13,7 +13,7 @@ import { Planet } from "./planet";
 export class PlanetListComponent {
 
     // Page Title and disclaimers
-    pageTitle = "List of Planets in our Solar System (ordered by max distance from the sun)";
+    pageTitle = "List of Planets in our Solar System";
     titleDisclaimer = "includes notable minor planets";
 
     // Image settings for planet table
@@ -21,6 +21,7 @@ export class PlanetListComponent {
     imageMargin = 5;
 
     // Planet data
+    // TODO: Convert to json file
     planetInfo: Planet[] = [
         {
             name: 'Mercury',
@@ -115,9 +116,6 @@ export class PlanetListComponent {
         }
     ];
 
-    // Define data source
-    dataSource = this.planetInfo;
-
     // Planet information that is displayed on the table
-    displayedColumns: string[] = ['imageUrl','name', 'type', 'category', 'distance'];
+    displayedColumns: string[] = ['imageUrl', 'name', 'type', 'category', 'distance'];
 }

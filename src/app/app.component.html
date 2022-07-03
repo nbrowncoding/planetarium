@@ -4,18 +4,20 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
   <body>
-    <mat-toolbar color="primary">
-      <button mat-icon-button>
-       <mat-icon>menu</mat-icon>
-     </button>
-     <span>{{ title }}</span>
-   </mat-toolbar>
-   <div class="mat-app-background" fxLayout="row" fxLayout.xs="column" fxLayoutGap="16px" fxLayoutAlign="center">
-     <planet-list></planet-list>
-   </div>
-   <footer class="mat-app-background">
-     <span>&COPY; 2022 Nicholas Brown. </span>
-     <span>Data from <a href="https://solarsystem.nasa.gov" target="_blank">NASA Planetary Science Division</a>.</span>
-   </footer>
+    <mat-sidenav-container fullscreen>
+      <mat-toolbar color="primary">
+        <button mat-icon-button>
+         <mat-icon>menu</mat-icon>
+       </button>
+       <span>{{ title }}</span>
+     </mat-toolbar>
+     <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="16px" fxLayoutAlign="center">
+       <router-outlet></router-outlet>
+     </div>
+      <div class="footer mat-app-background" #footer>
+        <span>&COPY; 2022 Nicholas Brown. </span>
+        <span>Data from <a href="https://solarsystem.nasa.gov" target="_blank">NASA Planetary Science Division</a>.</span>
+      </div>
+    </mat-sidenav-container>
   </body>
 </html>
