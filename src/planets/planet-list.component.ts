@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnDestroy, OnInit } from "@angular/core";
+import { Subscription } from "rxjs";
 import { Planet } from "./planet";
 import { PlanetData } from "./planet-data.service";
 
@@ -11,7 +12,7 @@ import { PlanetData } from "./planet-data.service";
 /**
  * Defins the the Planet List Compent that lists all of the planets in a table format
  */
-export class PlanetListComponent implements OnInit {
+export class PlanetListComponent implements OnInit, OnDestroy {
 
     // Constructor for planet data service
     constructor(private planetDataService: PlanetData) {}
@@ -25,15 +26,41 @@ export class PlanetListComponent implements OnInit {
     imageMargin = 5;
 
     // Planet data
-    // TODO: Convert to json file
     planetInfo: Planet[] = [];
+
+    // Observer subscription
+    sub!: Subscription;
+
+    // Observer error message
+    errorMessage = "";
 
     // Planet information that is displayed on the table
     displayedColumns: string[] = ['imageUrl', 'name', 'type', 'category', 'distance'];
 
-    // Configure initialization
+    /**
+     * Configure initialization events
+     */ 
     ngOnInit(): void {
-        // Get the planet data from the service when component initializes
-        this.planetInfo = this.planetDataService.getPlanetData();
+
+        // Subscrine to the planet data observer
+        this.sub = this.planetDataService.getPlanetData().subscribe({
+            
+            // Get the emited planet data from the observer
+            next: planets => this.planetInfo = planets,
+            
+            // Catch and handle HTTP errors
+            error: err => this.errorMessage = err
+
+        });
     }
+
+    /**
+     * Configure on the on destory events
+     */
+    ngOnDestroy(): void {
+        
+        // Unsubscribe from the observer when component is destroyed
+        this.sub.unsubscribe;
+    }
+    
 }
