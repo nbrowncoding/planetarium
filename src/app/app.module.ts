@@ -13,7 +13,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatIconModule,
     MatButtonModule,
     MatTableModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

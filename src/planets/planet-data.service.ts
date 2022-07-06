@@ -21,7 +21,7 @@ export class PlanetData {
 
     /**
      * Returns a list of planets and properties in an array via a service.
-     * @returns Observer<Planet[]? - An observer that emits an array of planetary data
+     * @returns Observer<Planet[]> - An observer that emits an array of planetary data
      */
     getPlanetData(): Observable<Planet[]> {
         return this.http.get<Planet[]>(this.planetDataUrl).pipe(

@@ -1,17 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { 
-    min-height: 100vh;
-    margin-bottom: 25px; /* Offset for page footer */
-    clear: both;
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-sidenav {
+    width: 250px;
 }
 
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+mat-card {
+    margin: 25px;
+}
 
 .footer {
     height: 25px;
     width: 100vw;
-    position: fixed;
     bottom: 0;
     padding-left: 25px;
     padding-top: 10px;

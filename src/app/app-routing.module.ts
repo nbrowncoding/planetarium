@@ -5,9 +5,11 @@ import { PlanetListComponent } from 'src/planets/planet-list.component';
 
 const routes: Routes = [
   // Default route (index)
-  {path: '', component: PlanetListComponent},
   {path: 'planets', component: PlanetListComponent},
-  {path: 'planets/details', component: PlanetDetails}
+  {path: 'planets/:name', component: PlanetDetails},
+  {path: '', component: PlanetListComponent},
+  {path: '**', redirectTo: 'planets', pathMatch: 'full'}
+  
 ];
 
 @NgModule({
