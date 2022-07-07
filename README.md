@@ -11,3 +11,6 @@ This project is just for learning Angular by using a topic I personally enjoy.
 - [ ] WIP - Create details page that dynamically loads the details for each planet. (https://github.com/nbrowncoding/planetarium/issues/4)
 - [x] Create links for each planet to the details page. (https://github.com/nbrowncoding/planetarium/issues/5)
 - [ ] WIP - Create markdowns for each of the planets. (https://github.com/nbrowncoding/planetarium/issues/6)
+
+# Notices
+Data and most images are from NASA/JPL and are used in an manor compliant with thier media guidelines.
