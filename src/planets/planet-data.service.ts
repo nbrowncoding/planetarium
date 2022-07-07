@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable, throwError } from "rxjs";
-import { catchError } from "rxjs/operators";
+import { catchError, map } from "rxjs/operators";
 import { Planet } from "./planet";
 
 @Injectable({
@@ -28,6 +28,18 @@ export class PlanetData {
             catchError(this.handleError)
         );
     }
+
+    /**
+     * Gets the data for a single planet and returns an observable with the data.
+     * @param name - Name of the planet
+     * @returns Observable<Planet> - An observerable with a data for the specified planet
+     */
+    getPlanet(name: string): Observable<Planet | undefined> {
+        return this.getPlanetData()
+          .pipe(
+            map((planets: Planet[]) => planets.find(p => p.name === name))
+          );
+      }
 
     /**
      * Handles any error that is generated 

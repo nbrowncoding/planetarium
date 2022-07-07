@@ -7,4 +7,6 @@ export interface Planet {
     category: string;
     distance: string;
     imageUrl: string;
+    imageDesc: string;
+    markdownUrl: string
 }

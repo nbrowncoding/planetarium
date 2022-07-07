@@ -30,6 +30,10 @@ mat-cell {
 }
 
 img {
-    border: 1px solid #304FFE;
+    border: 1px solid #0277BD;
     border-radius:25px;
+}
+
+a {
+    color: #40C4FF;
 }

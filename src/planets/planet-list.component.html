@@ -20,7 +20,7 @@
         <!-- Name Column -->
         <ng-container matColumnDef="name">
           <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
-          <mat-cell *matCellDef="let planet"> {{planet.name}} </mat-cell>
+          <mat-cell *matCellDef="let planet"><a [routerLink]="['/planets', planet.name]"> {{planet.name}} </a></mat-cell>
         </ng-container>
 
         <!-- Type Column -->

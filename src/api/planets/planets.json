@@ -4,90 +4,116 @@
         "type": "Terrestrial",
         "category": "Planet",
         "distance": "0.4 AU",
-        "imageUrl": "assets/images/mercury.jpeg"
+        "imageUrl": "assets/images/mercury.jpeg",
+        "imageDesc": "A false colored image of Mercury.",
+        "markdownUrl": "assets/mercury.md"
     },
     {
         "name": "Venus",
         "type": "Terrestrial",
         "category": "Planet",
         "distance": "0.7 AU",
-        "imageUrl": "assets/images/venus.jpeg"
+        "imageUrl": "assets/images/venus.jpeg",
+        "imageDesc": "",
+        "markdownUrl": "none"
     },
     {
         "name": "Earth",
         "type": "Terrestrial",
         "category": "Planet",
         "distance": "1 AU",
-        "imageUrl": "assets/images/earth.jpeg"
+        "imageUrl": "assets/images/earth.jpeg",
+        "imageDesc": "",
+        "markdownUrl": "none"
     },
     {
         "name": "Mars",
         "type": "Terrestrial",
         "category": "Planet",
         "distance": "1.5 AU",
-        "imageUrl": "assets/images/mars.jpeg"
+        "imageUrl": "assets/images/mars.jpeg",
+        "imageDesc": "",
+        "markdownUrl": "none"
     },
     {
         "name": "Ceres",
         "type": "Planetoid",
         "category": "Dwarf Planet",
         "distance": "2.8 AU",
-        "imageUrl": "assets/images/ceres.jpeg"
+        "imageUrl": "assets/images/ceres.jpeg",
+        "imageDesc": "",
+        "markdownUrl": "none"
     },
     {
         "name": "Jupiter",
         "type": "Gas Giant",
         "category": "Planet",
         "distance": "5.2 AU",
-        "imageUrl": "assets/images/jupiter.jpeg"
+        "imageUrl": "assets/images/jupiter.jpeg",
+        "imageDesc": "",
+        "markdownUrl": "none"
     },
     {
         "name": "Saturn",
         "type": "Gas Giant",
         "category": "Planet",
         "distance": "9.5 AU",
-        "imageUrl": "assets/images/saturn.jpeg"
+        "imageUrl": "assets/images/saturn.jpeg",
+        "imageDesc": "",
+        "markdownUrl": "none"
     },
     {
         "name": "Uranus",
         "type": "Ice Giant",
         "category": "Planet",
         "distance": "19.8 AU",
-        "imageUrl": "assets/images/uranus.jpeg"
+        "imageUrl": "assets/images/uranus.jpeg",
+        "imageDesc": "",
+        "markdownUrl": "none"
     },
     {
         "name": "Neptune",
         "type": "Ice Giant",
         "category": "Planet",
         "distance": "30.1 AU",
-        "imageUrl": "assets/images/neptune.jpeg"
+        "imageUrl": "assets/images/neptune.jpeg",
+        "imageDesc": "",
+        "markdownUrl": "none"
     },
     {
         "name": "Pluto",
         "type": "KBO (Kuiper belt object)",
         "category": "Dwarf Planet",
         "distance": "39 AU",
-        "imageUrl": "assets/images/pluto.jpeg"
+        "imageUrl": "assets/images/pluto.jpeg",
+        "imageDesc": "",
+        "markdownUrl": "none"
     },
     {
         "name": "Haumea",
         "type": "KBO (Kuiper belt object)",
         "category": "Dwarf Planet",
         "distance": "35 to 52 AU",
-        "imageUrl": "assets/images/haumea.jpeg"
+        "imageUrl": "assets/images/haumea.jpeg",
+        "imageDesc": "",
+        "markdownUrl": "none"
     },
     {
         "name": "Makemake",
         "type": "KBO (Kuiper belt object)",
         "category": "Dwarf Planet",
         "distance": "39 to 53 AU",
-        "imageUrl": "assets/images/makemake.jpeg"
+        "imageUrl": "assets/images/makemake.jpeg",
+        "imageDesc": "",
+        "markdownUrl": "none"
     },
     {
         "name": "Eris",
         "type": "KBO (Kuiper belt object)",
         "category": "Dwarf Planet",
         "distance": "38 to 68 AU",
-        "imageUrl": "assets/images/eris.jpeg"
+        "imageUrl": "assets/images/eris.jpeg",
+        "imageDesc": "",
+        "markdownUrl": "none"
     }
 ]
