@@ -1,12 +1,26 @@
 <main>
-  <mat-card>
+  <!-- Card with Planet Details -->
+  <mat-card *ngIf="planet !== undefined" id="planetDetails">
     <mat-card-title> {{ planet?.name }} </mat-card-title>
     <mat-card-content>
       <figure>
-        <img [src]="planet?.imageUrl" alt="Image of the planet Mercury" title="Mercury"/>
-        <figcaption>{{ planet?.imageDesc }} &COPY; NASA</figcaption>
+        <img [src]="planet?.imageUrl" alt="Image of a planet." title="Mercury"/>
+        <figcaption>{{ planet?.imageDesc }} </figcaption>
       </figure>
-      <markdown [src]="planet?.markdownUrl"></markdown>
+      <markdown class="md_planet_details" [src]="planet?.markdownUrl"></markdown>
     </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary" routerLink="" matTooltip="Back to Planet list.">Back</button>
+    </mat-card-actions>
+  </mat-card>
+  <!-- Error Card that is only show if the specified Planet could not be found -->
+  <mat-card *ngIf="planet === undefined" id="errorCard">
+    <mat-card-title> Invalid Planet </mat-card-title>
+    <mat-card-content>
+      The specified Planet is not valid. Please check the spelling of the Planet name and try again.
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary" routerLink="" matTooltip="Back to Planet list.">Back</button>
+    </mat-card-actions>
   </mat-card>
 </main>

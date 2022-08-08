@@ -44,9 +44,12 @@ export class PlanetDetailsComponent implements OnInit {
     }
 
     /**
-     * Gets the data for the specified planet from the planet data service
+     * Gets the data for the specified planet from the planet data service.
+     * 
+     * @param planetName - Name of the planet to lookup (not case sensitive)
      */
     getPlanet(planetName: string) {
+        // Subscribe to the Planet Data Service observerable and get the emitted data.
         this.planetData.getPlanet(planetName).subscribe({
             next: planet => this.planet = planet,
             error: err => this.errorMessage = err

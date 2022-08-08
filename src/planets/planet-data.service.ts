@@ -31,13 +31,14 @@ export class PlanetData {
 
     /**
      * Gets the data for a single planet and returns an observable with the data.
-     * @param name - Name of the planet
+     * @param name - Name of the planet (not case sensitive)
      * @returns Observable<Planet> - An observerable with a data for the specified planet
      */
     getPlanet(name: string): Observable<Planet | undefined> {
         return this.getPlanetData()
           .pipe(
-            map((planets: Planet[]) => planets.find(p => p.name === name))
+            // Get the planet data for the specified planet name (not case sensitive)
+            map((planets: Planet[]) => planets.find(p => p.name.toLocaleLowerCase() === name.toLocaleLowerCase()))
           );
       }
 

@@ -1,6 +1,6 @@
 mat-card {
     margin: 25px;
-    min-height: 300px;
+    min-height: 350px;
 }
 
 mat-card-title {
@@ -8,10 +8,19 @@ mat-card-title {
 }
 
 figure {
+    width: 321px;
     float: left;
     margin-left: 0;
+    border: 2px solid #01579B;
+    background-color: #01579B;
 }
 
 figcaption {
     font-style: italic;
+    background-color: #01579B;
+    padding-left: 5px;
+}
+
+markdown {
+    font-size: 15px;
 }

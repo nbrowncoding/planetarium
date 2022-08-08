@@ -5,7 +5,7 @@
         "category": "Planet",
         "distance": "0.4 AU",
         "imageUrl": "assets/images/mercury.jpeg",
-        "imageDesc": "A false colored image of Mercury.",
+        "imageDesc": "A false colored image of Mercury. Source: NASA/JPL",
         "markdownUrl": "assets/mercury.md"
     },
     {

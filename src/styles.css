@@ -14,3 +14,15 @@ mat-sidenav {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.md_planet_details table, tr, td {
+    border: solid 1px;
+    border-collapse: collapse;
+    padding: 5px 100px 5px 5px;
+}
+
+.md_planet_details th {
+    padding: 5px;
+    text-align: left;
+    background-color: #01579B;
+}
