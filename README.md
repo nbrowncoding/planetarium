@@ -4,7 +4,7 @@ Planetarium is a web application that details information about different planet
 <br/>
 This project is just for learning Angular by using a topic I personally enjoy.
 
-# Todo
+# Todo List
 - [x] Build Planet Table and Planet Data (https://github.com/nbrowncoding/planetarium/issues/1)
 - [x] Build url routing (https://github.com/nbrowncoding/planetarium/issues/2)
 - [x] Convert hard coded data source to a JSON file instead. (https://github.com/nbrowncoding/planetarium/issues/3)
@@ -13,4 +13,4 @@ This project is just for learning Angular by using a topic I personally enjoy.
 - [ ] WIP - Create markdowns for each of the planets. (https://github.com/nbrowncoding/planetarium/issues/6)
 
 # Notices
-Data and most images are from NASA/JPL and are used in an manor compliant with thier media guidelines.
+Data and most images are from NASA/JPL and are used in a manor compliant with thier media guidelines.
