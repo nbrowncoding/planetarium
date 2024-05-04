@@ -1,5 +1,5 @@
 # planetarium
-Planetarium is a web application that details information about different planets in the solar system.
+Planetarium is a web application that details information about different planets in the solar system. It includes pictures and useful information such as size, rotational period and orbital period.
 <br/>
 <br/>
 This project is just for learning Angular by using a topic I personally enjoy.
